@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="service_desc">Opens the minimal home screen when the Home button is pressed. Reads only which screen is in front; no content.</string>
+    <!-- Prompt shown as  user@host ~ %  (build.sh overrides these from config.sh) -->
+    <string name="prompt_user">me</string>
+    <string name="prompt_host">firetv</string>
+</resources>

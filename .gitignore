@@ -1,0 +1,13 @@
+# Personal: device details, other apps' APKs, screenshots, local state
+backup/
+shots/
+state/
+config.sh
+packages.local.txt
+
+# Build output and signing key (build.sh makes a new key if missing)
+launcher/build/
+*.keystore
+*.apk
+
+.DS_Store

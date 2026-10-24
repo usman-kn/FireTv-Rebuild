@@ -1,0 +1,59 @@
+# Packages disabled by debloat.sh (pm disable-user — reversible, nothing is uninstalled).
+# Format: <tier> <package>   — run tiers one at a time with ./debloat.sh <tier>
+# Undo everything with ./restore.sh
+
+# --- telemetry: metrics, logging, crash upload, content recognition
+telemetry com.amazon.device.metrics
+telemetry com.amazon.client.metrics
+telemetry com.amazon.device.telemetry.emitter
+telemetry com.amazon.wirelessmetrics.service
+telemetry com.amazon.perfc
+telemetry com.amazon.perfcollection
+telemetry com.amazon.dp.logger
+telemetry com.amazon.device.logmanager
+telemetry com.amazon.device.crashmanager
+telemetry com.amazon.connectivitydiag
+telemetry com.amazon.tv.acr
+telemetry com.fireos.usagestats.proxy
+
+# --- ads: sponsored rows, ad ID, demos, shopping, tutorials
+ads com.amazon.ftvads.deeplinking
+ads com.amazon.hybridadidservice
+ads com.amazon.sneakpeek
+ads com.amazon.shoptv.client
+ads com.amazon.tv.democontent.provider
+ads com.amazon.minitv.android.app
+ads com.amazon.media.recommendations
+ads com.amazon.storm.lightning.tutorial
+ads com.amazon.tmm.tutorial
+ads com.amazon.tv.releasenotes
+ads com.amazon.tv.csapp
+
+# --- optional features: run only the tiers you don't use
+alexa com.amazon.vizzini
+alexa com.amazon.tv.alexaalerts
+alexa com.amazon.tv.alexanotifications
+alexa com.amazon.alexamediaplayer.runtime.ftv
+alexa com.amazon.alexa.externalmediaplayer.fireos
+livetv com.amazon.franktvinput
+livetv com.amazon.tv.channelscan
+livetv com.mediatek.dtv.tvinput.atsctuner
+smarthome com.amazon.tv.matter
+smarthome com.amazon.tv.mattercohost
+smarthome com.amazon.smarthomemapviewapp
+apps com.amazon.cloud9
+apps com.amazon.bueller.photos
+apps com.amazon.bueller.music
+apps com.amazon.gamehub
+apps com.amazon.spiderpork
+apps com.amazon.tahoe
+apps com.amazon.ods.kindleconnect
+screensaver com.amazon.ftv.screensaver
+
+# --- system updates (optional: the main updater is protected, so this only
+#     slows updates down; restore.sh re-enables)
+updates com.amazon.device.software.ota
+updates com.amazon.device.software.ota.override
+updates com.amazon.tv.forcedotaupdater.v2
+updates com.amazon.tv.easyupgrade
+
